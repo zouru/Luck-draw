@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        #wp {
+            width: 200px;
+            height: 180px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            border: 0px solid #ccc;
+            position: relative;
+            left: 130px;
+        }
+
+        table {
+            position: relative;
+            top: 100px;
+        }
+
+        #lottery {
+            width: 454px;
+            margin: 100px auto 0;
+        }
+
+            #lottery table td {
+                width: 150px;
+                height: 150px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: #ccc;
+                font-size: 24px;
+                color: #333;
+                /*	display: none;*/
+            }
+
+                #lottery table td a {
+                    width: 150px;
+                    height: 150px;
+                    line-height: 150px;
+                    display: block;
+                    text-decoration: none;
+                }
+
+                #lottery table td.active {
+                    color: red;
+                    background-color: yellow;
+                }
+    </style>
+</head>
+<body>
+    <div id="lottery">
+        <table>
+            <tr>
+                <td class="lottery-unit lottery-unit-0">一等奖</td>
+                <td class="lottery-unit lottery-unit-1">三等奖</td>
+                <td class="lottery-unit lottery-unit-2">六等奖</td>
+            </tr>
+            <tr>
+                <td class="lottery-unit lottery-unit-7">特等奖</td>
+                <td><a href="#">抽奖</a></td>
+                <td class="lottery-unit lottery-unit-3">四等奖</td>
+            </tr>
+            <tr>
+                <td class="lottery-unit lottery-unit-6">七等奖</td>
+                <td class="lottery-unit lottery-unit-5">五等奖</td>
+                <td class="lottery-unit lottery-unit-4">二等奖</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="jquery-3.1.1.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="choujiang.js"></script>
+
+</body>
+</html>
